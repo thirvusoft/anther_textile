@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include anther_textile *.css
+recursive-include anther_textile *.csv
+recursive-include anther_textile *.html
+recursive-include anther_textile *.ico
+recursive-include anther_textile *.js
+recursive-include anther_textile *.json
+recursive-include anther_textile *.md
+recursive-include anther_textile *.png
+recursive-include anther_textile *.py
+recursive-include anther_textile *.svg
+recursive-include anther_textile *.txt
+recursive-exclude anther_textile *.pyc
