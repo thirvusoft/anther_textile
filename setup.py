@@ -10,7 +10,7 @@ setup(
 	name="anther_textile",
 	version=version,
 	description="Anther Barcode Textile",
-	author="Thirvusoft Private Limited",
+	author="Thrivusoft Private Limited",
 	author_email="thirvusoft@gmail.com",
 	packages=find_packages(),
 	zip_safe=False,

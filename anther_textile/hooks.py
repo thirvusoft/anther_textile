@@ -2,7 +2,7 @@ from . import __version__ as app_version
 
 app_name = "anther_textile"
 app_title = "Anther Textile"
-app_publisher = "Thirvusoft Private Limited"
+app_publisher = "Thrivusoft Private Limited"
 app_description = "Anther Barcode Textile"
 app_email = "thirvusoft@gmail.com"
 app_license = "MIT"
