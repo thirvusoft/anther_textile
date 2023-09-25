@@ -13,6 +13,7 @@ def item_price(doc):
         try:
             item_price_list.save()
             frappe.db.commit()
+            frappe.msgprint("Item Price Created")
         except Exception as e:
             frappe.throw(f"Batch-{item_price_list.batch_no} Already have this MRP - {item_price_list.price_list_rate } ")
         
