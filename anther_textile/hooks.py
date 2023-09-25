@@ -29,7 +29,8 @@ app_license = "MIT"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {"Purchase Receipt" : "anther_textile/utils/purchase_receipt.js",
+              "Purchase Invoice" : "anther_textile/utils/purchase_invoice.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -55,10 +56,10 @@ app_license = "MIT"
 # ----------
 
 # add methods and filters to jinja environment
-# jinja = {
-#	"methods": "anther_textile.utils.jinja_methods",
+jinja = {
+	"methods": "anther_textile.anther_textile.utils.purchase_receipt.get_serialno_barcode",
 #	"filters": "anther_textile.utils.jinja_filters"
-# }
+}
 
 # Installation
 # ------------
