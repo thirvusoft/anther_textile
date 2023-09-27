@@ -119,13 +119,14 @@ jinja = {
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-#	"*": {
-#		"on_update": "method",
-#		"on_cancel": "method",
-#		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"Purchase Receipt" : {
+		"on_submit": "anther_textile.anther_textile.utils.purchase_receipt.item_price"
+	},
+    "Purchase Invoice" : {
+		"on_submit": "anther_textile.anther_textile.utils.purchase_invoice.item_price"
+	}
+}
 
 # Scheduled Tasks
 # ---------------
