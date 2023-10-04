@@ -9,5 +9,15 @@ frappe.ui.form.on('Purchase Receipt', {
         item_price.valid_from = frm.doc.posting_date   
         frappe.call({method:"frappe.client.save", args:{doc:item_price}})
       })
+     },
+     setup: (frm) => {
+      frm.set_query('custom_serial_nos', () => {
+        return {
+          filters: {
+            'purchase_document_type': "Purchase Receipt",
+            'purchase_document_no' :frm.doc.name
+          }
+        };
+      });
      }
   })
